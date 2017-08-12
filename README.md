@@ -17,14 +17,14 @@ A partir da escolha da EDO, podemos modelar a sua equação de acordo com os mé
 
 #### Primeiro Método
 Pelo primeiro método, temos:   
-<center>dPdt = P(t+dt) - P(t)dt</center>
+<center>dPdt = P(t+dt) - P(t)dt</center>   
 Sendo assim, podemos chegar à conclusão que:
-<center>(dP/dt)*dt + P(t) = P(t+dt)</center>
+<center>(dP/dt)*dt + P(t) = P(t+dt)</center>   
 Sendo dt uma constante que determina o intervalo de análise ao redor do ponto.
 
 #### Segundo Método
 Pelo segundo método, temos:
-<center>dpdt = P(t+dt) - P(t-dt)2 dt</center>
+<center>dpdt = P(t+dt) - P(t-dt)2 dt</center>   
 Sendo assim, podemos chegar à conclusão que:
-<center>(dp/dt)*2dt +P(t-dt) = P(t+dt)</center>
+<center>(dp/dt)*2dt +P(t-dt) = P(t+dt)</center>   
 Sendo dt uma constante que determina o intervalo de análise ao redor do ponto.
