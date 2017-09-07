@@ -1,2 +1,3 @@
 # calculonumerico_20172
-Repositório com os trabalhos da disciplina de Cálculo Numérico da UFRJ - Período 2017.2
+## Aula do dia 06/09/2017
+Início do estudo sobre interpolação
