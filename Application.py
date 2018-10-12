@@ -17,14 +17,14 @@ class Application(object):
         print "f(",result,") ~= 0"
 
     def f(self, x):
-        print "Getting x = ",x
+        # print "Getting x = ",x
         fx = self.cs - ((self.cs - self.c0) * exp(self.ka * x))
-        print "Getting fx = ",fx
+        # print "Getting fx = ",fx
         return fx
 
     def dfdx(self, x):
         dfdx = self.ka * (-(self.cs - self.c0)) * exp(self.ka * x)
-        print "Getting dfdx = ",dfdx
+        # print "Getting dfdx = ",dfdx
         return dfdx
 
 Application()

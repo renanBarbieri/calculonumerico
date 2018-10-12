@@ -12,7 +12,7 @@ class NewtonRaphson(object):
         """
         currentPrecision = precision+1
         iteration_counter = 0
-        while currentPrecision > precision and iteration_counter < maxIterations:
+        while currentPrecision >= precision and iteration_counter < maxIterations:
             try:
                 nextGuess = guess - fx(guess)/dfdx(guess)
                 print "Next guess: ", nextGuess
