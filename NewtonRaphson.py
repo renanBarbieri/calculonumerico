@@ -8,7 +8,8 @@ class NewtonRaphson(object):
 
     def execute(self, fx, dfdx, guess, precision, maxIterations):
         """
-        Executa o método de NewtonRaphson usando a função passada
+        Executa o método de NewtonRaphson usando a função passada e sua derivada
+        Permite também que sejam passados o chute inicial, a precisão e o número máximo de iterações
         """
         currentPrecision = precision+1
         iteration_counter = 0
