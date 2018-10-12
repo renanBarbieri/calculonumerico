@@ -1,3 +1,4 @@
+# coding=utf-8
 import numpy as np
 from math import exp
 from NewtonRaphson import NewtonRaphson
@@ -9,17 +10,21 @@ class Application(object):
     ka = 0.88 # /dia
 
     def __init__(self):
-        print("Iniciando a aplicação")
-        x0 = 30
+        print("Initializing NewtonRaphson application")
+        t0 = int(raw_input("Enter the initial guess:"))
         newtonRaphson = NewtonRaphson()
-        newtonRaphson.execute(self.f, self.dfdx, x0, 0.000001, 100)
+        result = newtonRaphson.execute(self.f, self.dfdx, t0, 0.000001, 100)
+        print "f(",result,") ~= 0"
 
     def f(self, x):
-        print "Getting fx at "+x
-        return self.cs - ((self.cs - self.c0) * exp(self.ka * x))
+        print "Getting x = ",x
+        fx = self.cs - ((self.cs - self.c0) * exp(self.ka * x))
+        print "Getting fx = ",fx
+        return fx
 
     def dfdx(self, x):
-        print "Getting dfdx at "+x
-        return exp(self.ka * x) * self.ka * (self.cs - self.c0)
+        dfdx = self.ka * (-(self.cs - self.c0)) * exp(self.ka * x)
+        print "Getting dfdx = ",dfdx
+        return dfdx
 
 Application()
